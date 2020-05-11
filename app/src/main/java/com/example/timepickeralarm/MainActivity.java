@@ -1,8 +1,9 @@
 package com.example.timepickeralarm;
 
-import android.app.TimePickerDialog;
+
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -22,9 +23,14 @@ public class MainActivity extends AppCompatActivity {
     Button alarmButton;
     int alarmHour, alarmMinute;
     Calendar alarmCalendar;
+
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+
         alarmButton = (Button)findViewById(R.id.alarmButton);
 
         alarmButton.setOnClickListener(new View.OnClickListener() {

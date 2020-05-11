@@ -1,3 +1,17 @@
+package com.example.timepickeralarm;
+
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
+import android.widget.TextView;
+
+import com.ebanx.swipebtn.OnStateChangeListener;
+import com.ebanx.swipebtn.SwipeButton;
+import com.example.timepickeralarm.R;
+
+import java.util.Calendar;
+
 public class AlarmActivity extends AppCompatActivity {
     Calendar calendar;
     SwipeButton swipeButton;

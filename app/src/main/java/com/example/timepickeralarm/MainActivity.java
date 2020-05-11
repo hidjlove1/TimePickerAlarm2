@@ -1,3 +1,23 @@
+package com.example.timepickeralarm;
+
+import android.app.TimePickerDialog;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.TimePicker;
+import android.widget.Toast;
+
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity {
     Button alarmButton;
     int alarmHour, alarmMinute;
@@ -5,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        alarmButton = (Button) findViewById(R.id.alarmButton);
+        alarmButton = (Button)findViewById(R.id.alarmButton);
 
         alarmButton.setOnClickListener(new View.OnClickListener() {
             @Override
